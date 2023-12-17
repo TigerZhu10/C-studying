@@ -10,7 +10,7 @@
      
     //Char是8 bit
     char a = 't';
-    printf("a的值是:%c\n",a);
+    printf("a的值是:  %c\n",a);
     printf("b的地址是: %p\n",&a);
 
     int age = 12;
