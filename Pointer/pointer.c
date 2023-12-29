@@ -9,10 +9,14 @@
    temp = x;
    x = y;
    y = temp;
- }
+ } 
 
- void swap2(){
-   int *por = &num_1;
+ void swap2(int *ptr_1, int *ptr_2){
+   int temp = 0;
+   temp = *ptr_1;
+   *ptr_1 = *ptr_2;
+   *ptr_2 = temp;
+   
       
  }
  
@@ -66,7 +70,8 @@
    int num_2 = 200;
    swap1(num_1, num_2);
    printf("num_1: %d num_2: %d\n",num_1,num_2);
-   swap2(num_1, num_2);
+
+   swap2(&num_1, &num_2);
    printf("num_1: %d num_2: %d\n",num_1,num_2);
  }
 
