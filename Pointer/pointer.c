@@ -7,7 +7,7 @@
  void swap1(int x, int y){
    int temp = 0;
    temp = x;
-   x = y;
+   x = y; 
    y = temp;
  } 
 
@@ -17,7 +17,6 @@
    *ptr_1 = *ptr_2;
    *ptr_2 = temp;
    
-      
  }
  
  void main(){
@@ -73,6 +72,26 @@
 
    swap2(&num_1, &num_2);
    printf("num_1: %d num_2: %d\n",num_1,num_2);
+
+   int c = 10;
+   int *p_a = &c;
+   int **p_pa = &p_a;
+
+   printf("c的地址是: %p , c的值是: %d\n",&c, c);
+   printf("p_a的地址是: %p , p_a的值是: %p\n",&p_a, p_a);
+   printf("p_pa的地址是: %p , p_pa的值是: %p\n",&p_pa, p_pa);
+   printf("*p_a的解引用是: %d\n", *p_a);
+   printf("*p_pa的解引用是: %p\n", *p_pa);
+   printf("**p_pa的解引用是: %d\n", **p_pa);
+
+   *p_a = 20;
+   printf("*p_a的解引用是: %d\n", *p_a);
+   printf("*p_pa的解引用是: %p\n", *p_pa);
+   printf("**p_pa的解引用是: %d\n", **p_pa);
+
+   
+   
+   
  }
 
  
