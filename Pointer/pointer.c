@@ -3,14 +3,14 @@
  void getString(char**p){
    *p = "hello world";
  }
-
+ //这个是错误的解法：
  void swap1(int x, int y){
    int temp = 0;
    temp = x;
    x = y; 
    y = temp;
  } 
-
+ //这个是用指针正确的解法：
  void swap2(int *ptr_1, int *ptr_2){
    int temp = 0;
    temp = *ptr_1;
@@ -19,6 +19,8 @@
    
  }
  
+
+
  void main(){
    char *str = NULL;
    getString(&str);
@@ -67,6 +69,7 @@
 
    int num_1 = 100;
    int num_2 = 200;
+   
    swap1(num_1, num_2);
    printf("num_1: %d num_2: %d\n",num_1,num_2);
 
