@@ -92,6 +92,15 @@
    printf("*p_pa的解引用是: %p\n", *p_pa);
    printf("**p_pa的解引用是: %d\n", **p_pa);
 
+
+
+
+
+
+
+ for(int i = 0;i < size;i++){
+        calculationSum( )
+    }
    
    
    

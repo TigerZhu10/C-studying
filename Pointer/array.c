@@ -105,7 +105,7 @@ int main(void){
     }
 
     printf("string length: %d\n", length);
-
+    
  
 
     return 0;
